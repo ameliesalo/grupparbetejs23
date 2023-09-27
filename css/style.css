@@ -21,42 +21,41 @@ header{
     grid-column: 1/7;
     grid-row: 1/4;
     background-color: brown;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "aside aside aside section section section"
+    "aside aside aside article article article"
 }
 aside{
-    width: 25rem;
-    height: 20rem;
-    background-color: aqua;
+    width: 20rem;
+    height: 25rem;
 }
 header :nth-child(1){
     background-color: rgb(193, 245, 228);
-    grid-column: 1/span 3;
-    grid-row: 1/4;
-    justify-self: flex-start;
-    align-self: flex-start;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .left-button{
     background-color: antiquewhite;
-    height: 5vh;
-    width: 10vw;
+    height: 5px;
+    width: 10px;
     border-radius: 3rem;
 }
 header :nth-child(2){
-    grid-column: 3/span 3;
-    grid-row: 1/2;
+    grid-area: section;
+    height: 10rem;
+    padding-top: 10rem;
     background-color: rgb(254, 102, 37);
-    align-self: flex-end;
-    justify-self: flex-start;
+
 }
 header :nth-child(3){
-    grid-column: 3/span 3;
-    grid-row: 2/4;
+    grid-area: article;
+    height: 10rem;
+    padding-top: 10rem;
     background-color: rgba(246, 166, 19, 0.913);
-    align-self: flex-end;
-    justify-self: flex-end;
 }
 
 
