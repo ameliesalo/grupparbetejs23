@@ -37,6 +37,9 @@ header aside{
     justify-content: center;
     align-items: center;
 }
+header aside p{
+    width: 268px;
+}
 span{
     color: antiquewhite;
 }
@@ -45,8 +48,15 @@ span{
     height: 5vh;
     width: 10vw;
     border-radius: 3rem;
+    align-self: flex-start;
+    margin-top: 2rem;
+    margin-left: 3rem;
 }
-
+.family{
+   width: 15rem;
+   height: 16rem;
+   align-self: flex-end;
+}
 
 
 header section{
@@ -91,40 +101,56 @@ nav{
     background-color: rgba(158, 79, 232, 0.76);
     grid-column: 1/7;
     grid-row: 4/7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .mid-top h2{
     color: antiquewhite;
     font-family: Frank Ruhl Libre;
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 900;
     line-height: 45px;
     letter-spacing: -0.02em;
     text-align: left;
-    width: 314px
-    height: 140px
-    top: 715px
-    left: 326px
-
+    margin-right: auto;
 }
 .mid-top p{
-    width: 280px;
-    height: 237px;
-    font-family: Fira Sans;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+    width: 200px;
+    height: 100px;
+    align-self: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
 
 }
 .mid-button{
     height: 5vh;
     width: 10vw;
     border-radius: 3rem;
-    grid-column: 2/2;
-    grid-row: 6/6;
+    margin-bottom: auto;
+    margin-left: 3rem;
 }
 
+.child{
+    grid-column: 2/3;
+    grid-row: 6/8;
+    width: 6rem;
+    height: 8rem;
+    margin-left: auto;
+}
+.adult{
+    grid-column: 4/5;
+    grid-row: 6/8;
+    width: 5rem;
+    height: 14rem;
+}
+.old{
+    grid-column: 5/6;
+    grid-row: 6/8;
+    width: 6rem;
+    height: 15rem;
+    margin-left: auto;
+}
 .mid-bottom{
     background-color: rgb(215, 149, 27);
     grid-column: 1/7;
