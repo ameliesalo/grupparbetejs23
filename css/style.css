@@ -98,6 +98,7 @@ nav{
 }
 
 .mid-top{
+    margin-top: 2rem;
     background-color: rgba(158, 79, 232, 0.76);
     grid-column: 1/7;
     grid-row: 4/7;
@@ -127,25 +128,25 @@ nav{
     height: 5vh;
     width: 10vw;
     border-radius: 3rem;
-    margin-bottom: auto;
+    margin-bottom: 5rem;
     margin-left: 3rem;
 }
 
 .child{
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 6/8;
     width: 6rem;
     height: 8rem;
     margin-left: auto;
 }
 .adult{
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 6/8;
     width: 5rem;
     height: 14rem;
 }
 .old{
-    grid-column: 5/6;
+    grid-column: 4/5;
     grid-row: 6/8;
     width: 6rem;
     height: 15rem;
@@ -188,6 +189,13 @@ nav{
     width: 16rem;
     height: 12rem;
     border: solid 1px black;
+    display: flex;
+}
+.calendar button p{
+    align-self: center;
+}
+.calendar :nth-child(1){
+    background-color: rgb(185, 237, 220);
 }
 footer{
     background-color: rgb(100, 98, 98);
